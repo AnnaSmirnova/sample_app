@@ -1,0 +1,264 @@
+loading autotest/rails_rspec2
+bundle exec /usr/local/bin/ruby -S /usr/local/lib/ruby/gems/1.9.1/gems/rspec-core-2.4.0/bin/rspec --tty '/home/rails_projects/sample_app/spec/controllers/pages_controller_spec.rb' '/home/rails_projects/sample_app/spec/helpers/pages_helper_spec.rb' '/home/rails_projects/sample_app/spec/views/pages/contact.html.erb_spec.rb' '/home/rails_projects/sample_app/spec/views/pages/home.html.erb_spec.rb' '/home/rails_projects/sample_app/spec/requests/layout_links_spec.rb'
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m*[0m[33m*[0m[33m*[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m
+
+Pending:
+[33m  PagesHelper add some examples to (or delete) /home/rails_projects/sample_app/spec/helpers/pages_helper_spec.rb[0m
+[90m    # Not Yet Implemented[0m
+[90m    # ./spec/helpers/pages_helper_spec.rb:14[0m
+[33m  pages/contact.html.erb add some examples to (or delete) /home/rails_projects/sample_app/spec/views/pages/contact.html.erb_spec.rb[0m
+[90m    # Not Yet Implemented[0m
+[90m    # ./spec/views/pages/contact.html.erb_spec.rb:4[0m
+[33m  pages/home.html.erb add some examples to (or delete) /home/rails_projects/sample_app/spec/views/pages/home.html.erb_spec.rb[0m
+[90m    # Not Yet Implemented[0m
+[90m    # ./spec/views/pages/home.html.erb_spec.rb:4[0m
+
+Failures:
+
+  1) LayoutLinks should have a Home page at '/'
+     [31mFailure/Error:[0m [31mresponse.should have_selector('title', :content => "Home")[0m
+       [31mexpected following output to contain a <title>Home</title> tag:[0m
+       [31m<!DOCTYPE html>[0m
+       [31m<html>[0m
+       [31m<head>[0m
+       [31m<title>Ruby on Rails: Welcome aboard</title>[0m
+       [31m<style type="text/css" media="screen">[0m
+       [31m      body {[0m
+       [31m        margin: 0;[0m
+       [31m        margin-bottom: 25px;[0m
+       [31m        padding: 0;[0m
+       [31m        background-color: #f0f0f0;[0m
+       [31m        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";[0m
+       [31m        font-size: 13px;[0m
+       [31m        color: #333;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m      h1 {[0m
+       [31m        font-size: 28px;[0m
+       [31m        color: #000;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m      a  {color: #03c}[0m
+       [31m      a:hover {[0m
+       [31m        background-color: #03c;[0m
+       [31m        color: white;[0m
+       [31m        text-decoration: none;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m[0m
+       [31m      #page {[0m
+       [31m        background-color: #f0f0f0;[0m
+       [31m        width: 750px;[0m
+       [31m        margin: 0;[0m
+       [31m        margin-left: auto;[0m
+       [31m        margin-right: auto;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m      #content {[0m
+       [31m        float: left;[0m
+       [31m        background-color: white;[0m
+       [31m        border: 3px solid #aaa;[0m
+       [31m        border-top: none;[0m
+       [31m        padding: 25px;[0m
+       [31m        width: 500px;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m      #sidebar {[0m
+       [31m        float: right;[0m
+       [31m        width: 175px;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m      #footer {[0m
+       [31m        clear: both;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m[0m
+       [31m      #header, #about, #getting-started {[0m
+       [31m        padding-left: 75px;[0m
+       [31m        padding-right: 30px;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m[0m
+       [31m      #header {[0m
+       [31m        background-image: url("images/rails.png");[0m
+       [31m        background-repeat: no-repeat;[0m
+       [31m        background-position: top left;[0m
+       [31m        height: 64px;[0m
+       [31m      }[0m
+       [31m      #header h1, #header h2 {margin: 0}[0m
+       [31m      #header h2 {[0m
+       [31m        color: #888;[0m
+       [31m        font-weight: normal;[0m
+       [31m        font-size: 16px;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m[0m
+       [31m      #about h3 {[0m
+       [31m        margin: 0;[0m
+       [31m        margin-bottom: 10px;[0m
+       [31m        font-size: 14px;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m      #about-content {[0m
+       [31m        background-color: #ffd;[0m
+       [31m        border: 1px solid #fc0;[0m
+       [31m        margin-left: -55px;[0m
+       [31m        margin-right: -10px;[0m
+       [31m      }[0m
+       [31m      #about-content table {[0m
+       [31m        margin-top: 10px;[0m
+       [31m        margin-bottom: 10px;[0m
+       [31m        font-size: 11px;[0m
+       [31m        border-collapse: collapse;[0m
+       [31m      }[0m
+       [31m      #about-content td {[0m
+       [31m        padding: 10px;[0m
+       [31m        padding-top: 3px;[0m
+       [31m        padding-bottom: 3px;[0m
+       [31m      }[0m
+       [31m      #about-content td.name  {color: #555}[0m
+       [31m      #about-content td.value {color: #000}[0m
+       [31m[0m
+       [31m      #about-content ul {[0m
+       [31m        padding: 0;[0m
+       [31m        list-style-type: none;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m      #about-content.failure {[0m
+       [31m        background-color: #fcc;[0m
+       [31m        border: 1px solid #f00;[0m
+       [31m      }[0m
+       [31m      #about-content.failure p {[0m
+       [31m        margin: 0;[0m
+       [31m        padding: 10px;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m[0m
+       [31m      #getting-started {[0m
+       [31m        border-top: 1px solid #ccc;[0m
+       [31m        margin-top: 25px;[0m
+       [31m        padding-top: 15px;[0m
+       [31m      }[0m
+       [31m      #getting-started h1 {[0m
+       [31m        margin: 0;[0m
+       [31m        font-size: 20px;[0m
+       [31m      }[0m
+       [31m      #getting-started h2 {[0m
+       [31m        margin: 0;[0m
+       [31m        font-size: 14px;[0m
+       [31m        font-weight: normal;[0m
+       [31m        color: #333;[0m
+       [31m        margin-bottom: 25px;[0m
+       [31m      }[0m
+       [31m      #getting-started ol {[0m
+       [31m        margin-left: 0;[0m
+       [31m        padding-left: 0;[0m
+       [31m      }[0m
+       [31m      #getting-started li {[0m
+       [31m        font-size: 18px;[0m
+       [31m        color: #888;[0m
+       [31m        margin-bottom: 25px;[0m
+       [31m      }[0m
+       [31m      #getting-started li h2 {[0m
+       [31m        margin: 0;[0m
+       [31m        font-weight: normal;[0m
+       [31m        font-size: 18px;[0m
+       [31m        color: #333;[0m
+       [31m      }[0m
+       [31m      #getting-started li p {[0m
+       [31m        color: #555;[0m
+       [31m        font-size: 13px;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m[0m
+       [31m      #sidebar ul {[0m
+       [31m        margin-left: 0;[0m
+       [31m        padding-left: 0;[0m
+       [31m      }[0m
+       [31m      #sidebar ul h3 {[0m
+       [31m        margin-top: 25px;[0m
+       [31m        font-size: 16px;[0m
+       [31m        padding-bottom: 10px;[0m
+       [31m        border-bottom: 1px solid #ccc;[0m
+       [31m      }[0m
+       [31m      #sidebar li {[0m
+       [31m        list-style-type: none;[0m
+       [31m      }[0m
+       [31m      #sidebar ul.links li {[0m
+       [31m        margin-bottom: 5px;[0m
+       [31m      }[0m
+       [31m[0m
+       [31m    </style>[0m
+       [31m<script type="text/javascript">[0m
+       [31m      function about() {[0m
+       [31m        info = document.getElementById('about-content');[0m
+       [31m        if (window.XMLHttpRequest)[0m
+       [31m          { xhr = new XMLHttpRequest(); }[0m
+       [31m        else[0m
+       [31m          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }[0m
+       [31m        xhr.open("GET","rails/info/properties",false);[0m
+       [31m        xhr.send("");[0m
+       [31m        info.innerHTML = xhr.responseText;[0m
+       [31m        info.style.display = 'block'[0m
+       [31m      }[0m
+       [31m    </script>[0m
+       [31m</head>[0m
+       [31m<body>[0m
+       [31m    <div id="page">[0m
+       [31m      <div id="sidebar">[0m
+       [31m        <ul id="sidebar-items">[0m
+       [31m<li>[0m
+       [31m            <h3>Browse the documentation</h3>[0m
+       [31m            <ul class="links">[0m
+       [31m<li><a href="http://api.rubyonrails.org/">Rails API</a></li>[0m
+       [31m              <li><a href="http://stdlib.rubyonrails.org/">Ruby standard library</a></li>[0m
+       [31m              <li><a href="http://corelib.rubyonrails.org/">Ruby core</a></li>[0m
+       [31m              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>[0m
+       [31m            </ul>[0m
+       [31m</li>[0m
+       [31m        </ul>[0m
+       [31m</div>[0m
+       [31m[0m
+       [31m      <div id="content">[0m
+       [31m        <div id="header">[0m
+       [31m          <h1>Welcome aboard</h1>[0m
+       [31m          <h2>You’re riding Ruby on Rails!</h2>[0m
+       [31m        </div>[0m
+       [31m[0m
+       [31m        <div id="about">[0m
+       [31m          <h3><a href="rails/info/properties" onclick="about(); return false">About your application’s environment</a></h3>[0m
+       [31m          <div id="about-content" style="display: none"></div>[0m
+       [31m        </div>[0m
+       [31m[0m
+       [31m        <div id="getting-started">[0m
+       [31m          <h1>Getting started</h1>[0m
+       [31m          <h2>Here’s how to get rolling:</h2>[0m
+       [31m[0m
+       [31m          <ol>[0m
+       [31m<li>[0m
+       [31m              <h2>Use <code>rails generate</code> to create your models and controllers</h2>[0m
+       [31m              <p>To see all available options, run it without parameters.</p>[0m
+       [31m            </li>[0m
+       [31m[0m
+       [31m            <li>[0m
+       [31m              <h2>Set up a default route and remove or rename this file</h2>[0m
+       [31m              <p>Routes are set up in config/routes.rb.</p>[0m
+       [31m            </li>[0m
+       [31m[0m
+       [31m            <li>[0m
+       [31m              <h2>Create your database</h2>[0m
+       [31m              <p>Run <code>rake db:migrate</code> to create your database. If you're not using SQLite (the default), edit <code>config/database.yml</code> with your username and password.</p>[0m
+       [31m            </li>[0m
+       [31m          </ol>[0m
+       [31m</div>[0m
+       [31m      </div>[0m
+       [31m[0m
+       [31m      <div id="footer"> </div>[0m
+       [31m    </div>[0m
+       [31m  </body>[0m
+       [31m</html>[0m
+[90m     # ./spec/requests/layout_links_spec.rb:7:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.16 seconds
+[31m15 examples, 1 failure, 3 pending[0m
+Interrupt a second time to quit
